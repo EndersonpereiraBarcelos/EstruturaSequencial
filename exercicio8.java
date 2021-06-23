@@ -4,15 +4,11 @@ public class exercicio8 {
 
     public static void main(String[]args){
 
-        double horas;
-        double mes;
-        
-
         System.out.println("Digite quanto ganha por mês: ");
         System.out.println("Digite horas trabalhadas: ");
-        Scanner scanner = new Scanner(System.in);
-        horas = scanner.nextFloat();
-        mes = scanner.nextFloat();
+        Scanner sc = new Scanner(System.in);
+        double horas = sc.nextFloat();
+        double mes = sc.nextFloat();
 
         horas = (horas * mes);
 

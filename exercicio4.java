@@ -1,19 +1,26 @@
+import java.util.Scanner;
 
-public class exercicio4 {
-    
-    public static void main(String[] args) {
-        int[] arrayUm = {12,3,5,68,9,6,73,44,456,65,321};
-        int[] arrayDois = {43,42,4,8,55,21,2,45};
-        System.out.println("Digite um numero: ");
+public class exercicio4{
 
-        if(arrayDois.length > 8){
-            System.out.println("Tamanho do ArrayDois - Maior que 8!");
-        }else{
-            System.out.println("Tamanho do ArrayDois - Menor que 8!");
-        }
-        System.out.println("\nTamanho do ArrayUm = "+arrayUm.length);
+    public static void main(String[]args){
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Informe sua primeira nota bimestal: ");
+            double nota1 = sc.nextDouble();
+
+        System.out.print("informe sua segunda nota Bimestral: ");
+            double nota2 = sc.nextDouble();
+        
+        System.out.print("Informe sua terceira nota Bimestral: ");
+            double nota3 = sc.nextDouble();
+        
+        System.out.print("Informe sua quarta nota bimestral: ");
+            double nota4 = sc.nextDouble();
+
+        double calc = (nota1 + nota2 + nota3 + nota4) / 2;
+
+        System.out.print("Essa foi a somas das notas " + calc);
+
     }
-
 }
-    
-

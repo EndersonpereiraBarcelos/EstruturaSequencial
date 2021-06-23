@@ -4,10 +4,10 @@ class exercicio5{
 
     public static void main(String[]args){
 
-        Scanner entrada = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("Metros? ");
-        float metros = entrada.nextFloat();
+        float metros = sc.nextFloat();
 
         float centimetros = metros * 100;
 
